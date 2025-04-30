@@ -19,7 +19,7 @@ city_name = input("Enter the city name: ")
 CITY_LAT, CITY_LON = get_lat_lon(city_name)
 print(f"Latitude: {CITY_LAT}, Longitude: {CITY_LON}")
 
-API_KEY = "0aac8b7675b6a7fc19d6096c77e2ad85"
+API_KEY = "0aac8b7675b6a7fc19d6096c77eXXXXX"
 URL = f"http://api.openweathermap.org/data/2.5/air_pollution/history?lat={CITY_LAT}&lon={CITY_LON}&start={int((datetime.now() - timedelta(days=5)).timestamp())}&end={int(datetime.now().timestamp())}&appid={API_KEY}"
 
 
